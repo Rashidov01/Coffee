@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0px 40px 0px;
+  position: relative;
+  z-index: 1;
+
+}
+
+.header-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-link {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  right: -20px;
+  overflow: auto;
+  font-size: 24px;
+  text-align: center;
+  font-style: normal;
+  line-height: 32px;
+  height: calc(100vh - 90px);
+  padding-top: 40px;
+  background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+
+}
+
+.header-hamburg__menu {
+  background-image: url("./images/hamburg-menu.svg");
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  background-color: transparent;
+}
+
+
+
+.header-link__content {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  color: #333D4B;
+}
+
+.site-header__open .header-link {
+  display: block;
+}
+
+.site-header__open .header-hamburg__menu {
+  background-image: url("./images/x.svg");
+}
+
+.about {
+  background-image: url(./images/aboutUsImg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 110px 21px 80px 21px;
+  border-radius: 10px;
+  margin-bottom: 120px;
+}
+
+.about-heading {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #FEFCF7;
+}
+
+.about-text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+/* Picture */
+
+.commitment-img{
+  border-radius: 10px;
+}
+
+@media only screen and (min-width:540px) {
+
+  .header-menu__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-hamburg__menu {
+    display: none;
+  }
+
+  .header-link {
+    height: auto;
+    display: block;
+    position: relative;
+    top: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .header-link__content {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: #83888F;
+    margin-bottom: 0;
+  }
+
+  .header-menu__item:not(:last-child) {
+    margin-right: 15px;
+
+  }
+
+
+  .header-logo__img {
+    width: 236px;
+    height: 26px;
+  }
+
+
+  .about {
+    background-image: url(./images/tablet1.jpg);
+    padding: 120px 0 120px 40px;
+  }
+
+  .about-heading{
+    text-align: left;
+  }
+
+  .about-text{
+    text-align: left;
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .header-menu__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-hamburg__menu {
+    display: none;
+  }
+
+  .header-link {
+    height: auto;
+    display: block;
+    position: relative;
+    top: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .header-link__content {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+    margin-bottom: 0;
+  }
+
+  .header-menu__item:not(:last-child) {
+    margin-right: 33px;
+
+  }
+
+
+  .header-logo__img {
+    width: 236px;
+    height: 26px;
+  }
+
+  .about {
+    background-image: url(./images/tablet1.jpg);
+    padding: 120px 0px 120px 60px;
+
+  }
+
+  .about-heading {
+    text-align: start;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FEFCF7;
+
+  }
+
+  .about-text {
+    width: 398px;
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width:1000px) {
+  .about {
+    background-image: url(./images/desktopimg1.jpg);
+  }
+
+  .about-heading {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7;
+  }
+
+  .about-text {
+    font-family: 'Barlow';
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
